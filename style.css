@@ -1,0 +1,46 @@
+/* Cores do Modo Claro (Padrão) */
+:root {
+    --bg: #ffffff;
+    --texto: #1a3c1a;
+    --primaria: #2e7d32;
+    --card: #f0f4f0;
+}
+
+/* Cores do Modo Escuro */
+.dark-mode {
+    --bg: #121212;
+    --texto: #e8f5e9;
+    --primaria: #66bb6a;
+    --card: #1e1e1e;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--texto);
+    transition: 0.4s ease; /* Efeito suave na troca de cor */
+    margin: 0;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: var(--card);
+}
+
+.logo span { color: var(--primaria); font-weight: bold; }
+
+#theme-toggle {
+    cursor: pointer;
+    padding: 8px 16px;
+    border-radius: 20px;
+    border: 1px solid var(--primaria);
+    background: transparent;
+    color: var(--texto);
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
